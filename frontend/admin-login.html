@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KCEH Admin Login</title>
+
+    <!-- Main KCEH stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-login-page">
+
+    <div class="admin-login-container">
+
+        <div class="admin-login-logo">
+            <h1>KCEH Admin</h1>
+
+            <p>
+                Kampala Community Education Hub
+            </p>
+        </div>
+
+
+        <form id="adminLoginForm">
+
+            <div class="admin-login-form-group">
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter your username"
+                    required
+                    autocomplete="username"
+                >
+
+            </div>
+
+
+            <div class="admin-login-form-group">
+
+                <label for="password">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                    autocomplete="current-password"
+                >
+
+            </div>
+
+
+            <button
+                type="submit"
+                id="loginButton"
+                class="admin-login-button"
+            >
+                Login
+            </button>
+
+        </form>
+
+
+        <div
+            id="message"
+            class="admin-login-message"
+        ></div>
+
+
+        <div class="admin-login-back">
+
+            <a href="index.html">
+                ← Back to Website
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const loginForm =
+            document.getElementById('adminLoginForm');
+
+        const loginButton =
+            document.getElementById('loginButton');
+
+        const message =
+            document.getElementById('message');
+
+
+        loginForm.addEventListener('submit', async function(event) {
+
+            event.preventDefault();
+
+
+            const username =
+                document.getElementById('username').value.trim();
+
+            const password =
+                document.getElementById('password').value;
+
+
+            message.style.display = 'none';
+            message.className = 'admin-login-message';
+
+
+            loginButton.disabled = true;
+            loginButton.textContent = 'Logging in...';
+
+
+            try {
+
+                const response = await fetch('/api/admin/login', {
+
+                    method: 'POST',
+
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+
+                    body: JSON.stringify({
+                        username: username,
+                        password: password
+                    })
+
+                });
+
+
+                const data = await response.json();
+
+
+                if (data.success) {
+
+                    message.textContent =
+                        'Login successful! Redirecting...';
+
+                    message.classList.add('success');
+
+                    message.style.display = 'block';
+
+
+                    setTimeout(function() {
+
+                        window.location.href =
+                            'admin-dashboard.html';
+
+                    }, 800);
+
+
+                } else {
+
+                    message.textContent =
+                        data.message || 'Login failed.';
+
+                    message.classList.add('error');
+
+                    message.style.display = 'block';
+
+
+                    loginButton.disabled = false;
+
+                    loginButton.textContent = 'Login';
+
+                }
+
+
+            } catch (error) {
+
+                console.error('Login error:', error);
+
+
+                message.textContent =
+                    'Unable to connect to the server. Please try again.';
+
+                message.classList.add('error');
+
+                message.style.display = 'block';
+
+
+                loginButton.disabled = false;
+
+                loginButton.textContent = 'Login';
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>

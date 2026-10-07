@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <title>Kampala Community Education Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / HERO SECTION ===== -->
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1><span class="color-white">Kampala Community</span> <span class="color-blue">Education Hub</span></h1>
+            <p>
+                <span class="color-white">Empowering underserved communities through free education,</span><br>
+                <span class="color-white">skills training, and opportunity connection.</span>
+            </p>
+            <a href="about.html" class="hero-btn">Learn More About Our Mission</a>
+        </div>
+    </section>
+
+    <!-- ===== IMPACT STATISTICS ===== -->
+    <section class="impact-stats">
+        <h1><span class="color-blue">Our</span> <span class="color-black">Community Impact</span></h1>
+        <p>Real numbers showing how we're helping people in Kampala</p>
+
+        <div class="row">
+            <div class="stat-box">
+                <i class="fa-solid fa-users"></i>
+                <h2 id="statUsers">2,847</h2>
+                <p>Community Members Reached</p>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h2 id="statVolunteers">156</h2>
+                <p>Active Volunteer Tutors</p>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-download"></i>
+                <h2 id="statResources">3,210</h2>
+                <p>Resources Downloaded</p>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h2 id="statEvents">47</h2>
+                <p>Community Events Organized</p>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-briefcase"></i>
+                <h2 id="statJobs">89</h2>
+                <p>People Connected to Jobs</p>
+            </div>
+            <div class="stat-box">
+                <i class="fa-solid fa-star"></i>
+                <h2 id="statStories">124</h2>
+                <p>Success Stories Shared</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW WE HELP ===== -->
+    <section class="how-we-help">
+        <h1><span class="color-blue">How</span> <span class="color-black">We Help</span></h1>
+        <p>Our programs are designed to address real community needs</p>
+
+        <div class="row">
+            <div class="help-col">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>Free Education</h3>
+                <p>Access to free courses, videos, and learning materials for out-of-school youth and adults.</p>
+                <a href="programs.html" class="learn-more">Learn More →</a>
+            </div>
+            <div class="help-col">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <h3>Volunteer Tutoring</h3>
+                <p>Connect with volunteer tutors who provide one-on-one support in various subjects.</p>
+                <a href="volunteer.html" class="learn-more">Learn More →</a>
+            </div>
+            <div class="help-col">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Job Opportunities</h3>
+                <p>Find job postings and connect with employers looking for talented individuals.</p>
+                <a href="jobs.html" class="learn-more">Learn More →</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="help-col">
+                <i class="fa-solid fa-calendar-plus"></i>
+                <h3>Community Events</h3>
+                <p>Organize and discover local events, workshops, and community gatherings.</p>
+                <a href="events.html" class="learn-more">Learn More →</a>
+            </div>
+            <div class="help-col">
+                <i class="fa-solid fa-file-pdf"></i>
+                <h3>Resource Sharing</h3>
+                <p>Share and access free educational materials, textbooks, and learning resources.</p>
+                <a href="resources.html" class="learn-more">Learn More →</a>
+            </div>
+            <div class="help-col">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>Community News</h3>
+                <p>Stay informed about important announcements from government, NGOs, and community leaders.</p>
+                <a href="events.html" class="learn-more">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SUCCESS STORIES ===== -->
+    <section class="success-stories">
+        <h1><span class="color-blue">Real</span> <span class="color-black">Success Stories</span></h1>
+        <p>Hear from people whose lives have been changed</p>
+
+        <div class="row">
+            <div class="story-col">
+                <img src="images/user1.jpg" alt="John">
+                <div>
+                    <h3>John, 19 - Found a Job</h3>
+                    <p>"I dropped out of school but found free coding lessons here. Now I work as a web developer and support my family!"</p>
+                    <div class="story-tag">💻 Tech Success</div>
+                </div>
+            </div>
+            <div class="story-col">
+                <img src="images/christian-agbede-yj7RT8v5qLM-unsplash.jpg" alt="Mary">
+                <div>
+                    <h3>Mary, 16 - Passed Her Exams</h3>
+                    <p>"I was failing mathematics until I got a volunteer tutor through this platform. I passed my S4 exams with distinction!"</p>
+                    <div class="story-tag">📚 Academic Success</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="story-col">
+                <img src="images/christian-agbede-yj7RT8v5qLM-unsplash.jpg" alt="Peter">
+                <div>
+                    <h3>Peter, 24 - Found Employment</h3>
+                    <p>"After university, I couldn't find a job. This platform connected me with an employer. Now I pay my own rent!"</p>
+                    <div class="story-tag">💼 Career Success</div>
+                </div>
+            </div>
+            <div class="story-col">
+                <img src="images/christian-agbede-0FhUaeMIPMw-unsplash.jpg" alt="Sarah">
+                <div>
+                    <h3>Sarah - Community Leader</h3>
+                    <p>"I organized a women's empowerment workshop through the platform. 50 women attended and gained new skills!"</p>
+                    <div class="story-tag">🌟 Community Success</div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all">
+            <a href="success-stories.html" class="hero-btn red-btn">View All Stories</a>
+        </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="cta">
+        
+        <h1>Join Us in Making a Difference<br>Your Community Needs You!</h1>
+        <a href="volunteer.html" class="hero-btn">BECOME A VOLUNTEER</a>
+        <a href="contact.html" class="hero-btn cta-contact-btn">CONTACT US</a>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-full">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                    <p class="brand-description">
+                        Empowering underserved communities in Kampala through free education, skills training, and opportunity connection.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="resources.html"><i class="fa-solid fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="volunteer.html"><i class="fa-solid fa-chevron-right"></i> Volunteer</a></li>
+                        <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-text">
+                            <span>Kampala, Uganda</span>
+                            <span>Kiwenda, Gayaza Road</span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <span>+256 785 678 900</span>
+                            <span>Mon-Fri 9:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:emubwirizabutumwa@gmail.com">kceh@gmail.com</a>
+                            <a href="mailto:support@kceh.org">support@kceh.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p class="newsletter-text">
+                        Subscribe to get updates on programs, events, and opportunities.
+                    </p>
+                    <form class="newsletter-form" id="newsletterForm" onsubmit="return handleNewsletterSubmit(event)">
+                        <div class="input-group">
+                            <input type="email" id="newsletterEmail" placeholder="Your Email Address" required>
+                            <button type="submit" aria-label="Subscribe">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div id="newsletterStatus" class="newsletter-status"></div>
+                        <p class="newsletter-note">
+                            <i class="fa-solid fa-lock"></i> We respect your privacy
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>
+                        Made with 
+                        <i class="fa-solid fa-heart footer-heart"></i> 
+                        by <span class="developer">Mubwirizabutumwa Elie</span>
+                    </p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>
+                        <i class="fa-regular fa-copyright"></i> 
+                        2026 Kampala Community Education Hub. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+    <script>
+        // ====== MENU TOGGLE ======
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){ if (navLinks) navLinks.style.right = "0"; }
+        function hideMenu(){ if (navLinks) navLinks.style.right = "-200px"; }
+
+        // ====== NEWSLETTER ======
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('newsletterEmail');
+            const statusDiv = document.getElementById('newsletterStatus');
+            const email = emailInput.value.trim();
+            const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+            if (!emailPattern.test(email)) {
+                statusDiv.style.color = '#ff4444';
+                statusDiv.innerHTML = '❌ Please enter a valid email address';
+                emailInput.style.borderColor = '#ff4444';
+                return false;
+            }
+            statusDiv.style.color = '#4CAF50';
+            statusDiv.innerHTML = '✅ Thank you for subscribing! You\'ll receive updates.';
+            emailInput.style.borderColor = '#4CAF50';
+            emailInput.value = '';
+            setTimeout(() => {
+                emailInput.style.borderColor = '';
+                statusDiv.innerHTML = '';
+            }, 5000);
+            return false;
+        }
+
+        // ====== SCROLL TO TOP ======
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('scrollTopBtn');
+            if (window.scrollY > 300) {
+                if (btn) btn.style.display = 'flex';
+            } else {
+                if (btn) btn.style.display = 'none';
+            }
+        });
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // ====== ANIMATED COUNTER (Optional) ======
+        document.addEventListener('DOMContentLoaded', function() {
+            const stats = document.querySelectorAll('.stat-box h2');
+            stats.forEach(stat => {
+                const target = parseInt(stat.textContent.replace(/,/g, ''));
+                let current = 0;
+                const increment = Math.ceil(target / 50);
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        stat.textContent = target.toLocaleString();
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = current.toLocaleString();
+                    }
+                }, 40);
+            });
+        });
+    </script>
+    <script src="security.js"></script>
+</body>
+</html>

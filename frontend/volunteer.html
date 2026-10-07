@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <title>Volunteer - Kampala Community Education Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
+                    <li><a href="volunteer.html" class="active">VOLUNTEER</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1><span class="color-blue">Become a</span> <span class="color-black">Volunteer</span></h1>
+            <p>Your skills can change someone's life. Join us today!</p>
+        </div>
+    </section>
+
+    <section class="volunteer-section">
+        <div class="row">
+            <div class="volunteer-info">
+                <h2><span class="color-blue">Why</span> <span class="color-black">Volunteer?</span></h2>
+                <p>By volunteering with us, you can:</p>
+                <ul>
+                    <li><i class="fa-solid fa-check-circle"></i> Make a real difference in someone's life</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Share your skills and knowledge</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Gain valuable teaching and mentoring experience</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Connect with like-minded community members</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Build your professional network</li>
+                    <li><i class="fa-solid fa-check-circle"></i> Receive a certificate of appreciation</li>
+                </ul>
+                <div class="volunteer-impact">
+                    <h3>Current Volunteer Needs:</h3>
+                    <div class="need-item">
+                        <span>Math Tutors</span>
+                        <span class="need-count">8 needed</span>
+                    </div>
+                    <div class="need-item">
+                        <span>English Tutors</span>
+                        <span class="need-count">5 needed</span>
+                    </div>
+                    <div class="need-item">
+                        <span>Computer Skills Trainers</span>
+                        <span class="need-count">10 needed</span>
+                    </div>
+                    <div class="need-item">
+                        <span>Career Mentors</span>
+                        <span class="need-count">6 needed</span>
+                    </div>
+                    <div class="need-item">
+                        <span>Coding Instructors</span>
+                        <span class="need-count">4 needed</span>
+                    </div>
+                </div>
+            </div>
+            <div class="volunteer-form">
+                <h2><span class="color-blue">Register</span> <span class="color-black">Now</span></h2>
+                <form id="volunteerForm" onsubmit="return submitVolunteer(event)">
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" id="volName" name="full_name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" id="volEmail" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="volPhone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="volSkills">Subjects/Skills You Can Teach *</label>
+                        <select id="volSkills" name="skills" required>
+                            <option value="">Select your skills</option>
+                            <option value="Math">Mathematics</option>
+                            <option value="English">English</option>
+                            <option value="Science">Science</option>
+                            <option value="Computer">Computer Skills</option>
+                            <option value="Business">Business Skills</option>
+                            <option value="Coding">Coding/Programming</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Availability (Hours per week) *</label>
+                        <input type="number" id="volHours" name="availability" placeholder="e.g., 5" min="1" max="40" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Why do you want to volunteer?</label>
+                        <textarea id="volReason" name="reason" rows="4" placeholder="Tell us why you want to help..."></textarea>
+                    </div>
+                    <button type="submit" class="hero-btn red-btn">
+                        <i class="fa-solid fa-hand-holding-heart"></i> Register to Volunteer
+                    </button>
+                </form>
+                <div id="volunteerStatus" class="volunteer-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-full">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                    <p class="brand-description">Empowering underserved communities in Kampala through free education, skills training, and opportunity connection.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="resources.html"><i class="fa-solid fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="volunteer.html"><i class="fa-solid fa-chevron-right"></i> Volunteer</a></li>
+                        <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events</a></li>
+                        <li><a href="jobs.html"><i class="fa-solid fa-chevron-right"></i> Jobs</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-text"><span>Kampala, Uganda</span><span>Kiwenda, Gayaza Road</span></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-text"><span>+256 785 678 900</span><span>Mon-Fri 9:00 AM - 6:00 PM</span></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <a href="mailto:kceh@gmail.com">kceh@gmail.com</a>
+                            <a href="mailto:support@kceh.org">support@kceh.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p class="newsletter-text">Subscribe to get updates on programs, events, and opportunities.</p>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <div class="input-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                        <p class="newsletter-note"><i class="fa-solid fa-lock"></i> We respect your privacy</p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>Made with <i class="fa-solid fa-heart footer-heart"></i> by <span class="developer">Mubwirizabutumwa Elie</span></p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p><i class="fa-regular fa-copyright"></i> 2026 Kampala Community Education Hub. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+    <script src="security.js"></script>
+
+    <script>
+    window.submitVolunteer = function(event) {
+    event.preventDefault();
+
+    const status = document.getElementById('volunteerStatus');
+    const full_name = document.getElementById('volName').value;
+    const email = document.getElementById('volEmail').value;
+    const phone = document.getElementById('volPhone').value;
+    const skills = document.getElementById('volSkills').value;
+    const availability = document.getElementById('volHours').value;
+    const reason = document.getElementById('volReason').value;
+
+    status.style.color = '#1a6bc4';
+    status.innerHTML = '⏳ Submitting... Please wait.';
+
+    fetch('http://localhost:3000/api/volunteer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ full_name, email, phone, skills, availability, reason })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            status.style.color = '#4CAF50';
+            status.innerHTML = '✅ ' + data.message;
+            document.getElementById('volunteerForm').reset();
+            setTimeout(() => { status.innerHTML = ''; }, 8000);
+        } else {
+            status.style.color = '#ff4444';
+            status.innerHTML = '❌ ' + data.message;
+        }
+    })
+    .catch(error => {
+        status.style.color = '#ff4444';
+        status.innerHTML = '❌ Error submitting form. Please try again.';
+        console.error('Error:', error);
+    });
+
+    return false;
+};
+    </script>
+</body>
+</html>

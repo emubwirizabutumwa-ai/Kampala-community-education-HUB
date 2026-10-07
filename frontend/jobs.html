@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <title>Jobs - Kampala Community Education Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="jobs.html" class="active">JOBS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1><span class="color-blue">Job</span> <span class="color-black">Opportunities</span></h1>
+            <p>    </p>
+        </div>
+    </section>
+<br>
+<br>
+    <section class="jobs-section">
+        <div class="job-intro">
+            <h2><span class="color-blue">Available</span> <span class="color-black">Positions</span></h2>
+            <br>
+            <p>Check out these job opportunities from local employers. Apply directly through our platform!</p>
+        </div>
+
+        <div class="jobs-list">
+            <!-- Job 1 -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h3>Web Developer</h3>
+                    <span class="job-type">Full-Time</span>
+                </div>
+                <div class="job-company">
+                    <i class="fa-solid fa-building"></i> Tech Solutions Uganda
+                </div>
+                <div class="job-location">
+                    <i class="fa-solid fa-location-dot"></i> Kampala, Uganda
+                </div>
+                <div class="job-description">
+                    <p>Looking for a skilled web developer with experience in HTML, CSS, JavaScript, and PHP.</p>
+                </div>
+                <div class="job-meta">
+                    <span><i class="fa-regular fa-clock"></i> Posted 2 days ago</span>
+                    <span><i class="fa-regular fa-money-bill-1"></i> Salary: 1.5M - 2.5M UGX</span>
+                </div>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h3>Math Teacher</h3>
+                    <span class="job-type">Full-Time</span>
+                </div>
+                <div class="job-company">
+                    <i class="fa-solid fa-building"></i> Kampala International School
+                </div>
+                <div class="job-location">
+                    <i class="fa-solid fa-location-dot"></i> Kampala, Uganda
+                </div>
+                <div class="job-description">
+                    <p>Qualified math teacher for secondary school. Must have teaching experience and a degree.</p>
+                </div>
+                <div class="job-meta">
+                    <span><i class="fa-regular fa-clock"></i> Posted 5 days ago</span>
+                    <span><i class="fa-regular fa-money-bill-1"></i> Salary: 1.2M - 2M UGX</span>
+                </div>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h3>Customer Service Representative</h3>
+                    <span class="job-type">Full-Time</span>
+                </div>
+                <div class="job-company">
+                    <i class="fa-solid fa-building"></i> MTN Uganda
+                </div>
+                <div class="job-location">
+                    <i class="fa-solid fa-location-dot"></i> Kampala, Uganda
+                </div>
+                <div class="job-description">
+                    <p>Handle customer inquiries, resolve issues, and provide excellent service. Training provided.</p>
+                </div>
+                <div class="job-meta">
+                    <span><i class="fa-regular fa-clock"></i> Posted 1 week ago</span>
+                    <span><i class="fa-regular fa-money-bill-1"></i> Salary: 800K - 1.2M UGX</span>
+                </div>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="job-card">
+                <div class="job-header">
+                    <h3>Digital Marketing Assistant</h3>
+                    <span class="job-type">Internship</span>
+                </div>
+                <div class="job-company">
+                    <i class="fa-solid fa-building"></i> Jumia Uganda
+                </div>
+                <div class="job-location">
+                    <i class="fa-solid fa-location-dot"></i> Kampala, Uganda
+                </div>
+                <div class="job-description">
+                    <p>Learn digital marketing, social media management, and content creation. Opportunity for full-time hire.</p>
+                </div>
+                <div class="job-meta">
+                    <span><i class="fa-regular fa-clock"></i> Posted 2 weeks ago</span>
+                    <span><i class="fa-regular fa-money-bill-1"></i> Salary: 300K UGX</span>
+                </div>
+                <a href="#" class="apply-btn">Apply Now</a>
+            </div>
+        </div>
+
+        <!-- Post a Job -->
+        <div class="post-job">
+            <h3><span class="color-blue">Employers</span> <span class="color-black">Post a Job</span></h3>
+            <p>Are you hiring? Post your job opportunity here and connect with talented candidates.</p>
+            <a href="contact.html" class="hero-btn red-btn">Post a Job</a>
+        </div>
+    </section>
+
+    <footer class="footer-full">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                    <p class="brand-description">Empowering underserved communities in Kampala through free education, skills training, and opportunity connection.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="resources.html"><i class="fa-solid fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="volunteer.html"><i class="fa-solid fa-chevron-right"></i> Volunteer</a></li>
+                        <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events</a></li>
+                        <li><a href="jobs.html"><i class="fa-solid fa-chevron-right"></i> Jobs</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-text"><span>Kampala, Uganda</span><span>Kiwenda, Gayaza Road</span></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-text"><span>+256 785 678 900</span><span>Mon-Fri 9:00 AM - 6:00 PM</span></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <a href="mailto:kceh@gmail.com">kceh@gmail.com</a>
+                            <a href="mailto:support@kceh.org">support@kceh.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p class="newsletter-text">Subscribe to get updates on programs, events, and opportunities.</p>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <div class="input-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                        <p class="newsletter-note"><i class="fa-solid fa-lock"></i> We respect your privacy</p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>Made with <i class="fa-solid fa-heart footer-heart"></i> by <span class="developer">Mubwirizabutumwa Elie</span></p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p><i class="fa-regular fa-copyright"></i> 2026 Kampala Community Education Hub. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+    <script src="security.js"></script>
+</body>
+</html>

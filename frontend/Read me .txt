@@ -1,0 +1,68 @@
+============================================
+KAMPALA COMMUNITY EDUCATION HUB
+Complete Website Project
+============================================
+
+PROJECT OVERVIEW
+----------------
+This is a complete community-focused website designed to help 
+underserved communities in Kampala, Uganda through:
+
+1. Free Education Programs
+2. Volunteer Tutoring
+3. Job Opportunities
+4. Community Events
+5. Free Learning Resources
+6. Success Stories
+
+FILE STRUCTURE
+--------------
+├── index.html          - Homepage
+├── about.html          - About Us
+├── programs.html       - Programs/Services
+├── resources.html      - Free Resources
+├── volunteer.html      - Volunteer Registration
+├── events.html         - Community Events
+├── jobs.html           - Job Board
+├── success-stories.html - Impact Stories
+├── contact.html        - Contact Us
+├── style.css           - Complete Styles
+├── script.js           - JavaScript Functions
+├── security.js         - Security Features
+└── images/             - Image Assets
+
+HOW TO USE
+----------
+1. Open index.html in your browser to view the homepage
+2. Navigate through all pages using the navigation menu
+3. All forms are functional with validation
+4. The website is fully responsive (works on all devices)
+
+FEATURES
+--------
+✅ Fully Responsive Design
+✅ Working Contact Forms
+✅ Volunteer Registration
+✅ Newsletter Subscription
+✅ Resource Categories
+✅ Impact Statistics (Animated)
+✅ Success Stories
+✅ Job Board
+✅ Event Listings
+✅ Security Features (XSS, CSRF, Rate Limiting)
+✅ SEO Friendly
+✅ Mobile-Friendly Menu
+
+CREDITS
+-------
+Developer: Mubwirizabutumwa Elie
+Project: ICT Project 3
+Date: 2026
+
+CONTACT
+-------
+Email: kceh@gmail.com
+Phone: +256 785 678 900
+Location: Kampala, Uganda
+
+============================================

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <title>Resources - Kampala Community Education Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="resources.html" class="active">RESOURCES</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="events.html">EVENTS</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1><span class="color-blue">Free</span> <span class="color-black">Learning Resources</span></h1>
+        </div>
+    </section>
+<br>
+<br>
+   <section class="resources-section">
+
+    <div class="resource-categories">
+        <div class="category-tabs">
+
+            <button class="tab-btn active" data-category="all">
+                All Resources
+            </button>
+
+            <button class="tab-btn" data-category="textbooks">
+                Textbooks
+            </button>
+
+            <button class="tab-btn" data-category="videos">
+                Videos
+            </button>
+
+            <button class="tab-btn" data-category="worksheets">
+                Worksheets
+            </button>
+
+            <button class="tab-btn" data-category="links">
+                Useful Links
+            </button>
+
+        </div>
+    </div>
+        <div class="resource-grid" id="resourceGrid">
+            <!-- Resources will be loaded from database via JavaScript -->
+        </div>
+    <!---- resources -->
+    <div class="resources-grid">
+
+    <!-- TEXTBOOK -->
+    <div class="resource-card" data-category="textbooks">
+        <h3>Introduction to Research Methods</h3>
+        <p>Research methodology textbook for students.</p>
+
+        <a href="resources/books/research-methods.pdf"
+           target="_blank"
+           class="resource-btn">
+            Open Textbook
+        </a>
+    </div>
+
+
+    <!-- VIDEO -->
+    <div class="resource-card" data-category="videos">
+        <h3>Research Methods Explained</h3>
+        <p>Watch this video introduction to research methods.</p>
+
+        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+           target="_blank"
+           class="resource-btn">
+            Watch Video
+        </a>
+    </div>
+
+
+    <!-- WORKSHEET -->
+    <div class="resource-card" data-category="worksheets">
+        <h3>Research Proposal Worksheet</h3>
+        <p>Download the worksheet and complete the exercises.</p>
+
+        <a href="resources/worksheets/research-proposal.pdf"
+           target="_blank"
+           class="resource-btn">
+            Open Worksheet
+        </a>
+    </div>
+
+
+    <!-- USEFUL LINK -->
+    <div class="resource-card" data-category="links">
+        <h3>W3Schools</h3>
+        <p>Useful resource for learning web development.</p>
+
+        <a href="https://www.w3schools.com/"
+           target="_blank"
+           class="resource-btn">
+            Visit Website
+        </a>
+    </div>
+
+</div>
+
+</section>
+    </section>
+
+    <footer class="footer-full">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                    <p class="brand-description">Empowering underserved communities in Kampala through free education, skills training, and opportunity connection.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="resources.html"><i class="fa-solid fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="volunteer.html"><i class="fa-solid fa-chevron-right"></i> Volunteer</a></li>
+                        <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events</a></li>
+                        <li><a href="jobs.html"><i class="fa-solid fa-chevron-right"></i> Jobs</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-text"><span>Kampala, Uganda</span><span>Kiwenda, Gayaza Road</span></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-text"><span>+256 785 678 900</span><span>Mon-Fri 9:00 AM - 6:00 PM</span></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <a href="mailto:kceh@gmail.com">kceh@gmail.com</a>
+                            <a href="mailto:support@kceh.org">support@kceh.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p class="newsletter-text">Subscribe to get updates on programs, events, and opportunities.</p>
+                    <form class="newsletter-form" id="newsletterForm" onsubmit="return handleNewsletterSubmit(event)">
+                        <div class="input-group">
+                            <input type="email" id="newsletterEmail" placeholder="Your Email Address" required>
+                            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                        <div id="newsletterStatus" class="newsletter-status"></div>
+                        <p class="newsletter-note"><i class="fa-solid fa-lock"></i> We respect your privacy</p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>Made with <i class="fa-solid fa-heart footer-heart"></i> by <span class="developer">Mubwirizabutumwa Elie</span></p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p><i class="fa-regular fa-copyright"></i> 2026 Kampala Community Education Hub. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+    <script src="security.js"></script>
+
+    <script>
+        // ============================================
+        // LOAD RESOURCES FROM DATABASE
+        // ============================================
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            loadResources('all');
+            
+            // Category filter buttons
+            document.querySelectorAll('.tab-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    loadResources(this.dataset.category);
+                });
+            });
+        });
+        
+        function loadResources(category) {
+            const grid = document.getElementById('resourceGrid');
+            grid.innerHTML = '<div style="text-align:center; padding: 50px;"><i class="fa-solid fa-spinner fa-spin" style="font-size: 30px; color: #1a6bc4;"></i><p>Loading resources...</p></div>';
+            
+            fetch(`get_resources.php?category=${category}`)
+                .then(response => response.json())
+                .then(resources => {
+                    if (resources.length === 0) {
+                        grid.innerHTML = '<div style="text-align:center; padding: 50px;"><p>No resources found in this category.</p></div>';
+                        return;
+                    }
+                    
+                    let html = '';
+                    resources.forEach(resource => {
+                        html += `
+                            <div class="resource-card" data-category="${resource.category}">
+                                <div class="resource-icon">
+                                    <i class="fa-solid ${getIcon(resource.category)}"></i>
+                                </div>
+                                <h3>${escapeHtml(resource.title)}</h3>
+                                <p>${escapeHtml(resource.description)}</p>
+                                <div class="resource-meta">
+                                    <span><i class="fa-regular fa-file"></i> ${resource.file_type || 'File'}</span>
+                                    <span><i class="fa-regular fa-download"></i> ${formatNumber(resource.download_count)} downloads</span>
+                                </div>
+                                ${getDownloadButton(resource)}
+                            </div>
+                        `;
+                    });
+                    grid.innerHTML = html;
+                })
+                .catch(error => {
+                    grid.innerHTML = `<div style="text-align:center; padding: 50px; color: #f44336;"><p>Error loading resources. Please try again.</p></div>`;
+                    console.error('Error:', error);
+                });
+        }
+        
+        function getIcon(category) {
+            const icons = {
+                'textbooks': 'fa-book',
+                'videos': 'fa-video',
+                'worksheets': 'fa-pen',
+                'links': 'fa-link'
+            };
+            return icons[category] || 'fa-file';
+        }
+        
+        function getDownloadButton(resource) {
+            if (resource.is_external) {
+                return `<a href="${resource.external_url}" target="_blank" class="download-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Site</a>`;
+            } else {
+                return `<a href="track_download.php?id=${resource.id}" class="download-btn"><i class="fa-solid fa-download"></i> Download Free</a>`;
+            }
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function formatNumber(num) {
+            if (num >= 1000) {
+                return (num / 1000).toFixed(1) + 'k';
+            }
+            return num;
+        }
+        
+        // ============================================
+        // NEWSLETTER WITH PHP BACKEND
+        // ============================================
+        
+        window.handleNewsletterSubmit = function(event) {
+            event.preventDefault();
+            const emailInput = document.getElementById('newsletterEmail');
+            const statusDiv = document.getElementById('newsletterStatus');
+            const email = emailInput.value.trim();
+            
+            const emailPattern = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i;
+            if (!emailPattern.test(email)) {
+                statusDiv.style.color = '#ff4444';
+                statusDiv.innerHTML = '❌ Please enter a valid email address';
+                emailInput.style.borderColor = '#ff4444';
+                return false;
+            }
+            
+            statusDiv.innerHTML = '⏳ Subscribing...';
+            statusDiv.style.color = '#1a6bc4';
+            
+            fetch('save_newsletter.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: 'email=' + encodeURIComponent(email)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    statusDiv.style.color = '#4CAF50';
+                    statusDiv.innerHTML = '✅ ' + data.message;
+                    emailInput.value = '';
+                    emailInput.style.borderColor = '#4CAF50';
+                } else {
+                    statusDiv.style.color = '#ff4444';
+                    statusDiv.innerHTML = '❌ ' + data.message;
+                    emailInput.style.borderColor = '#ff4444';
+                }
+            })
+            .catch(error => {
+                statusDiv.style.color = '#ff4444';
+                statusDiv.innerHTML = '❌ Error subscribing. Please try again.';
+                console.error('Error:', error);
+            });
+            
+            return false;
+        };
+        
+        // ============================================
+        // SCROLL TO TOP
+        // ============================================
+        
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('scrollTopBtn');
+            if (window.scrollY > 300) {
+                btn.style.display = 'flex';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+        
+        window.scrollToTop = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        
+        // ============================================
+        // MENU TOGGLE
+        // ============================================
+        
+        var navLinks = document.getElementById("navLinks");
+        window.showMenu = function() {
+            navLinks.style.right = "0";
+        };
+        window.hideMenu = function() {
+            navLinks.style.right = "-200px";
+        };
+    </script>
+</body>
+</html>

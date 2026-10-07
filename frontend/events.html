@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <title>Events - Kampala Community Education Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="programs.html">PROGRAMS</a></li>
+                    <li><a href="resources.html">RESOURCES</a></li>
+                    <li><a href="volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="events.html" class="active">EVENTS</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1><span class="color-blue">Community</span> <span class="color-black">Events</span></h1>
+            <p>Stay connected with upcoming events, workshops, and gatherings</p>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <div class="event-intro">
+            <h2><span class="color-blue">Upcoming</span> <span class="color-black">Events</span></h2>
+            <p>Join us at our upcoming community events. All events are free and open to everyone!</p>
+        </div>
+
+        <div class="events-list">
+            <!-- Event 1 -->
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">15</span>
+                    <span class="month">Jan</span>
+                    <span class="year">2026</span>
+                </div>
+                <div class="event-info">
+                    <h3>Free Coding Workshop</h3>
+                    <p><i class="fa-regular fa-clock"></i> 10:00 AM - 2:00 PM</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Kampala Youth Center, Kawempe</p>
+                    <p>Learn HTML, CSS, and JavaScript from professional developers. No experience needed!</p>
+                    <div class="event-tags">
+                        <span class="tag">Free</span>
+                        <span class="tag">50 spots</span>
+                        <span class="tag">Register now</span>
+                    </div>
+                    <a href="#" class="event-btn">Register Now</a>
+                </div>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">22</span>
+                    <span class="month">Jan</span>
+                    <span class="year">2026</span>
+                </div>
+                <div class="event-info">
+                    <h3>Women's Empowerment Workshop</h3>
+                    <p><i class="fa-regular fa-clock"></i> 9:00 AM - 1:00 PM</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Gayaza Community Hall</p>
+                    <p>Learn about entrepreneurship, financial literacy, and leadership skills.</p>
+                    <div class="event-tags">
+                        <span class="tag">Free</span>
+                        <span class="tag">30 spots</span>
+                        <span class="tag">Women only</span>
+                    </div>
+                    <a href="#" class="event-btn">Register Now</a>
+                </div>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">29</span>
+                    <span class="month">Jan</span>
+                    <span class="year">2026</span>
+                </div>
+                <div class="event-info">
+                    <h3>Math Tutoring Session</h3>
+                    <p><i class="fa-regular fa-clock"></i> 2:00 PM - 5:00 PM</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Online (Zoom)</p>
+                    <p>Free math tutoring for S1-S4 students. Bring your questions!</p>
+                    <div class="event-tags">
+                        <span class="tag">Free</span>
+                        <span class="tag">20 spots</span>
+                        <span class="tag">Online</span>
+                    </div>
+                    <a href="#" class="event-btn">Register Now</a>
+                </div>
+            </div>
+
+            <!-- Event 4 -->
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">5</span>
+                    <span class="month">Feb</span>
+                    <span class="year">2026</span>
+                </div>
+                <div class="event-info">
+                    <h3>Career Mentorship Fair</h3>
+                    <p><i class="fa-regular fa-clock"></i> 10:00 AM - 4:00 PM</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Kampala Business Center</p>
+                    <p>Connect with professionals, learn about career paths, and get mentorship advice.</p>
+                    <div class="event-tags">
+                        <span class="tag">Free</span>
+                        <span class="tag">100 spots</span>
+                        <span class="tag">All welcome</span>
+                    </div>
+                    <a href="#" class="event-btn">Register Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Event -->
+        <div class="submit-event">
+            <h3><span class="color-blue">Submit</span> <span class="color-black">Your Event</span></h3>
+            <p>Are you organizing a community event? Let us know and we'll share it!</p>
+            <a href="contact.html" class="hero-btn red-btn">Submit Event</a>
+        </div>
+    </section>
+
+    <footer class="footer-full">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+                    <p class="brand-description">Empowering underserved communities in Kampala through free education, skills training, and opportunity connection.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="programs.html"><i class="fa-solid fa-chevron-right"></i> Programs</a></li>
+                        <li><a href="resources.html"><i class="fa-solid fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="volunteer.html"><i class="fa-solid fa-chevron-right"></i> Volunteer</a></li>
+                        <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events</a></li>
+                        <li><a href="jobs.html"><i class="fa-solid fa-chevron-right"></i> Jobs</a></li>
+                        <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-text"><span>Kampala, Uganda</span><span>Kiwenda, Gayaza Road</span></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-text"><span>+256 785 678 900</span><span>Mon-Fri 9:00 AM - 6:00 PM</span></div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <a href="mailto:kceh@gmail.com">kceh@gmail.com</a>
+                            <a href="mailto:support@kceh.org">support@kceh.org</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-col newsletter-col">
+                    <h4>Newsletter</h4>
+                    <p class="newsletter-text">Subscribe to get updates on programs, events, and opportunities.</p>
+                    <form class="newsletter-form" onsubmit="return false;">
+                        <div class="input-group">
+                            <input type="email" placeholder="Your Email Address" required>
+                            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                        <p class="newsletter-note"><i class="fa-solid fa-lock"></i> We respect your privacy</p>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>Made with <i class="fa-solid fa-heart footer-heart"></i> by <span class="developer">Mubwirizabutumwa Elie</span></p>
+                </div>
+                <div class="footer-bottom-right">
+                    <p><i class="fa-regular fa-copyright"></i> 2026 Kampala Community Education Hub. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+    <script src="security.js"></script>
+</body>
+</html>
